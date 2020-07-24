@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Heading from "../Reusable/Heading"
 import Img from "gatsby-image"
+import {Link} from "gatsby";
 
 export default class Coursescart extends Component {
     constructor(props){
@@ -15,7 +16,7 @@ export default class Coursescart extends Component {
             <section className="py-5">
                
                 <div className="container">
-                    <Heading title="Courses" />
+                    <Heading title="Collection" />
                     <div className="row ">
                         {this.state.mycourses.map(({node})=>{
                             return(
@@ -32,8 +33,13 @@ export default class Coursescart extends Component {
                                             <p className="text-muted">
                                                 <small>{node.description.description}</small>
                                             </p>
-                                            
+                                            <Link to="https://www.goodreads.com/search?utf8=%E2%9C%93&q=&search_type=books/" className="nav-link text-white">
                                             <button 
+                                            className="btn btn-warning "
+      
+                                            >Buy Now</button>
+                         </Link>
+                                          {/* <button 
                                             className="btn btn-warning snipcart-add-item"
                                             data-item-id={node.id}
                                             data-item-name={node.title}
@@ -43,8 +49,10 @@ export default class Coursescart extends Component {
 
                                      
                                             
-                                            >Buy Now</button>
+                                            >Buy Now</button> */}
+                                          
                                     </div>
+                 
                                 </div>
                             )
                         })

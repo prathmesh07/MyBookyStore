@@ -17,17 +17,17 @@ export default class Navbar extends Component {
       {
         id:2,
         text:"About us",
-        url:"about/",
+        url:"/about/",
       },
       {
         id:3,
         text:"Services",
-        url:"/",
+        url:"/service/",
       },
       {
         id:4,
         text:"Contact",
-        url:"/",
+        url:"/contact/",
       },
     ]
   }

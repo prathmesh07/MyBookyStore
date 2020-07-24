@@ -1,5 +1,5 @@
 import React from "react"
-
+import Contactt from "../components/Contact/Contactt"
 import Layout from "../components/layout"
 
 import SEO from "../components/seo"
@@ -9,20 +9,21 @@ import Infoblock from "../components/Reusable/Infoblock"
 import DualInfoblock from "../components/Reusable/DualInfoblock"
 import { graphql, StaticQuery } from 'gatsby'
 import Teamphotosection from "../components/About/Teamphotosection"
+import Creator from "../components/Contact/Creator"
 
-const AboutPage = ({data}) => (
+const contactPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <HeroSection 
 
       img={data.img.childImageSharp.fluid}
-      title="About myBooky  "
-      heroclass="about-background"
+      title="Contact Us  "
+      heroclass="contact-background"
     />
-    <DualInfoblock heading="A Message from Team" />
-    <Teamphotosection />
-    <Infoblock heading="About Vision" />
     
+   <Contactt />
+   
+    <Creator   />
     
   </Layout>
 )
@@ -30,7 +31,7 @@ const AboutPage = ({data}) => (
 export const query= graphql`
 {
   
-   img: file(relativePath: { eq: "about.png" }) {
+   img: file(relativePath: { eq: "contact.png" }) {
     childImageSharp {
       fluid{
         ...GatsbyImageSharpFluid_tracedSVG
@@ -41,4 +42,4 @@ export const query= graphql`
 }
 `
 
-export default AboutPage
+export default contactPage

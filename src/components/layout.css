@@ -31,3 +31,16 @@
   flex-direction: column;
 
 }
+
+.contact-background{
+  min-height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.contactt{
+  margin-top: 20px;
+}
