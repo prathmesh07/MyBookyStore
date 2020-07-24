@@ -35,11 +35,11 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-snipcart",
+      resolve: 'gatsby-plugin-snipcartv3',
       options: {
-        apiKey: process.env.SNIPCART_KEY,
+        apiKey: 'YjQwMzA2YjMtOTBmYi00YjUyLWI2MTUtNWE4OTgzZDQwNjg3NjM3MzExMzI3MjMzNjY5MzY1',
         autopop: true,
-      },
+      }
     },
     {
       resolve: `gatsby-source-contentful`,
