@@ -38,7 +38,7 @@ export default class Coursescart extends Component {
                                             data-item-id={node.id}
                                             data-item-name={node.title}
                                             data-item-pirce={node.price}
-                                            data-item-url="https://learncodeonline.in"
+                                            data-item-url="https://mybooky.netlify.app/"
                                             data-item-image={node.image.fixed.src}
 
                                      
