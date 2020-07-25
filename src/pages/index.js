@@ -8,6 +8,7 @@ import Heading from "../components/Reusable/Heading"
 import Infoblock from "../components/Reusable/Infoblock"
 import DualInfoblock from "../components/Reusable/DualInfoblock"
 import Coursescart from "../components/Cart/Coursescart"
+import Bundlescart from "../components/Cart/Bundlescart"
 import { graphql, StaticQuery } from 'gatsby'
 
 
@@ -24,7 +25,7 @@ const IndexPage = ({data}) => (
     <Infoblock heading="About Us" />
     <Coursescart courses={data.courses} />
     <DualInfoblock heading="Our Team" />
-    
+    <Bundlescart bundles={data.bundles}/>
   </Layout>
 )
 
@@ -56,7 +57,21 @@ export const query= graphql`
         }
       }
     }
-
+    bundles:allContentfulBundles{
+      edges {
+        node {
+          id
+         title
+          price
+        
+          image{
+            fixed(width:200, height:300){
+              ...GatsbyContentfulFixed_tracedSVG
+            }
+          }
+        }
+      }
+    }
 }
 `
 

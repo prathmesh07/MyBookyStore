@@ -30,7 +30,7 @@ Our target is for inspiring our action, but we can achieve more than what is pre
                             <div className="card-body">
                                 <h5 className="card-title text-success">Reading as Habit</h5>
                                 <p className="card-text">One of the greatest gifts adults can give—to their offspring and to their society—is to read to children.</p>
-                                <Link to="/about/" className="btn btn-warning btn-block">
+                                <Link to="/contact/" className="btn btn-warning btn-block">
                                         Know more
                          </Link>
                             </div>

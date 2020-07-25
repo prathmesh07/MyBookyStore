@@ -10,9 +10,9 @@ export default function Creator() {
         <Heading title="Created By" />
             <div className="row">
             
-                <div className="containerr">
-                             <div className="card" >
-                            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGbCZ-a9ridGw/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=jXdnAf5xcwDxeviOKmikXmInHEIh5zmMYOUPnoXybZ4" class="card-img-top" alt="image goes here"/>
+                <div className="col-8 col-sm-3 mx-auto">
+                             <div className="card "  >
+                            <img src="https://i.ibb.co/6HPT9w2/Made-with-Square-Insta-Pic.jpg" class="card-img-top" alt="image goes here"/>
                             <div className="card-body">
                                 <h5 className="card-title text-success">Hi ,there</h5>
                                 <p className="card-text">These site created by Prathmesh Asole..</p>
